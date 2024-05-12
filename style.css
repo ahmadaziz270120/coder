@@ -144,8 +144,17 @@ nav > a {
     box-shadow: 2px 4px 4px #979797;
 }
 
+.service-detail-item:hover{
+    transform: scale(1.15);
+}
+
+.service-detail-item:hover img {
+    filter: grayscale(0);
+}
+
 .service-detail-item img {
     width: 100%;
+    filter: grayscale(1);
 
 }
 
