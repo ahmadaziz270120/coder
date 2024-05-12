@@ -50,11 +50,15 @@ section {
    padding: 16px 128px;
    position: sticky;
    top: 0; 
-   background-color: #FFC108;
+   background-color: white;
 }
 
 #header h1 {
     margin: 0;
+}
+
+nav > a:hover {
+    color: #FFC108;
 }
 
 #landing {
@@ -114,6 +118,21 @@ nav > a {
     justify-content: space-between;
 }
 
+.service-header h1 {
+    position: relative;
+}
+
+.service-header h1::before {
+    content: ""; 
+    width: 60px;
+    height: 60px;
+    background: url("./images/accent1.svg") ;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
 .service-detail {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -139,6 +158,21 @@ nav > a {
     padding: 0 16px;
 }
 
+#contact h1 {
+    position: relative;
+}
+
+#contact h1::before {
+    content: ""; 
+    width: 60px;
+    height: 60px;
+    background: url("./images/accent2.svg") ;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
 .contact-detail {
     display: flex;
     justify-content: space-between;
@@ -153,7 +187,7 @@ form {
     padding: 64px 32px;
 }
 
-form h1 {
+form h2 {
     font-size: 32px;
     text-align: center;
 }
@@ -161,6 +195,10 @@ form h1 {
 form button {
     border: none;
 
+}
+
+form button:hover {
+    cursor: pointer;
 }
 
 .form-group {
@@ -204,6 +242,10 @@ form button {
     outline: none;
     border-bottom: 1px solid black;
     font-size: 24px;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #FFC108;
 }
 
 .input-group label {
